@@ -11,7 +11,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.15)), url('home.jpg') center/cover no-repeat;
+    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.15)), url('Assets/home.jpg') center/cover no-repeat;
     font-family: 'Arial Rounded MT Bold', Arial, sans-serif;
     overflow: hidden;
     position: relative;

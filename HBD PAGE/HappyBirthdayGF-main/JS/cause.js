@@ -3,22 +3,22 @@
     { 
         text: "Teri muskaan hi meri har dua ka sabse khoobsurat jawaab hai.. 💖", 
         emoji: "🌟",
-        gif: "gif1.gif"
+        gif: "../Assets/gif1.gif"
     },
     { 
         text: "Tere hone se meri duniya har roz thodi aur khoobsurat lagti hai. 🌸 ", 
         emoji: "💗",
-        gif: "gif2.gif"
+        gif: "../Assets/gif2.gif"
     },
     { 
         text: "Tu meri dua bhi hai, meri khushi bhi, meri duniya bhi. ✨ ", 
         emoji: "💕",
-        gif: "gif1.gif"
+        gif: "../Assets/gif1.gif"
     },
     { 
         text: "Tere saath har lamha zindagi ka sabse khoobsurat ehsaas ban jaata hai. ", 
         emoji: "🌟",
-        gif: "gif2.gif"
+        gif: "../Assets/gif2.gif"
     }
 ];
 
@@ -95,7 +95,7 @@ function displayNewReason() {
                             opacity: 0,
                             duration: 1,
                             onComplete: () => {
-                                window.location.href = 'last.html'; // Replace with the actual URL of the next page
+                                window.location.href = '../HTML/last.html'; // Replace with the actual URL of the next page
                             }
                         });
                     });
