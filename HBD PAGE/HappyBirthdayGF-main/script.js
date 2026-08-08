@@ -1,3 +1,38 @@
+const SECRET_PASSWORD = 'chikugulu';
+
+const modal = document.getElementById('password-modal');
+const passwordInput = document.getElementById('password-input');
+const passwordButton = document.getElementById('password-button');
+const passwordError = document.getElementById('password-error');
+const pageContent = document.getElementById('page-content');
+
+function unlockPage() {
+    modal.classList.add('hidden');
+    document.body.classList.add('unlocked');
+}
+
+function showPasswordError(message) {
+    passwordError.textContent = message;
+}
+
+passwordButton.addEventListener('click', () => {
+    const enteredPassword = passwordInput.value.trim().toLowerCase();
+
+    if (enteredPassword === SECRET_PASSWORD) {
+        unlockPage();
+    } else {
+        showPasswordError('Wrong password. Try again 💕');
+        passwordInput.value = '';
+        passwordInput.focus();
+    }
+});
+
+passwordInput.addEventListener('keydown', (event) => {
+    if (event.key === 'Enter') {
+        passwordButton.click();
+    }
+});
+
 // Cursor following effect
 const cursor = document.querySelector('.cursor');
 document.addEventListener('mousemove', (e) => {
@@ -42,6 +77,10 @@ function createFloating() {
 
 // Initialize animations
 window.addEventListener('load', () => {
+    if (modal.classList.contains('hidden')) {
+        unlockPage();
+    }
+
     // Title animation
     gsap.to('h1', {
         opacity: 1,

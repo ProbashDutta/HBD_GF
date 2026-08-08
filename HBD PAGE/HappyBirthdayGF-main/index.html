@@ -6,18 +6,28 @@
     <title>Happy Birthday</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <link rel="stylesheet" href="style.css">
-    
 </head>
 <body>
-    <div class="cursor"></div>
-    <div class="container">
-        <h1>Happy Birthday Chikuu💗</h1>
-        <div class="greeting"></div>
-        <button class="cta-button">Click to Enter Our  Chiku-gulu World 💕</button>
+    <div class="password-modal" id="password-modal">
+        <div class="password-card">
+            <div class="password-icon">💌</div>
+            <h2>Secret Entrance</h2>
+            <p class="password-subtitle">Enter the password to open Chikuu's birthday world</p>
+            <input type="password" id="password-input" placeholder="Password" autocomplete="off">
+            <button id="password-button" class="password-button">Enter</button>
+            <p class="password-error" id="password-error"></p>
+        </div>
     </div>
 
-    <script src="script.js">
-        
-    </script>
+    <div class="page-content" id="page-content">
+        <div class="cursor"></div>
+        <div class="container">
+            <h1>Happy Birthday Chikuu💗</h1>
+            <div class="greeting"></div>
+            <button class="cta-button">Click to Enter Our Chiku-gulu World 💕</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
